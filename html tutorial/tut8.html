@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <title>tut8</title>
+  </head>
+  <body>
+    <h2> Adding forms and input tags to website </h2>
+    <form action="backend.php">
+      <label for="name">Name</label>
+      <div>  
+          <input type="Text" name="my name" id="name">
+        </div>
+        <br>
+        <label for="role">Role</label>
+        <div>
+          <input type="text" name="my role"  id="role">
+        </div>
+        <br>
+        <label for="email">Email</label>
+        <div>
+          <input type="email" name="my email"  id="email">
+        </div>
+        <br>
+        <label for="Bonus">Bonus</label>
+        <div>
+         <input type="number" name="my Bonus"  id="Bonus">
+        </div>
+        <br>
+        <label for="week">Week</label>
+        <div>
+          <input type="week" name=" myweek"  id="week">
+        </div>
+        <br>
+        <label for="date">Date</label>
+        <div>
+       <input type="date" name="my date"  id="date">
+        </div>
+        <br>
+        <label for="gender">Gender</label>
+        <div>
+           Male<input type="radio" name="my gender" id="gender">
+           Female<input type="radio" name="my gender" id="gender">
+          Other<input type="radio" name="my gender" id="gender">
+        </div>
+        <br>
+        <label for="textarea">Textarea</label>
+        <div>
+          <!--  <br> tag is not recommeded for designing  -->
+          write something about yourself: <br><textarea name="my text" cols="80" rows="20"  id="textarea"></textarea>
+        </div>
+        <label for="eligibility">Eligibility Check</label>
+        <div>
+          Are you eligible?:<input type="checkbox" name="eligibility" checked  id="eligibility">
+        </div>
+        <br>
+        <div>
+          <label for="car">car</label>
+          <select name="my car" id="car">
+            <option value="Thar">Thar</option>
+            <option value="Farari">Farari</option>
+            <option value="Landrover">Landrover</option>
+          </select>
+        
+        </div>
+        <br>
+        <div>
+           <input type="reset" value="reset now">
+           <input type="submit" value="final submit">
+        </div>
+        <br>
+    </form>
+</body>
+</html>
