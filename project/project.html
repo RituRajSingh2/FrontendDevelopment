@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBroker - Your Trusted Trading Partner</title>
+    <!-- Link to Google Fonts for styling -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS Styles -->
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff4c00;
+            text-decoration: none;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin-left: 20px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            color: #ff4c00;
+        }
+
+        .cta-button {
+            padding: 10px 20px;
+            background-color: #ff4c00;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+
+        .cta-button:hover {
+            background-color: #e04300;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: url('https://via.placeholder.com/1500x800') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 100px 50px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .features .feature-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .features .feature-item {
+            flex: 1 1 300px;
+            margin: 20px;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .features .feature-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .features .feature-item h3 {
+            margin-bottom: 15px;
+            color: #ff4c00;
+        }
+
+        .features .feature-item p {
+            color: #555;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 40px 50px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #ff4c00;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .navbar ul {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .navbar ul li {
+                margin: 10px 0;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .features .feature-list {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="#" class="logo">MyBroker</a>
+        <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#signup" class="cta-button">Sign Up</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Trade Smarter, Invest Better</h1>
+            <p>Join thousands of traders who trust MyBroker for seamless trading and investment solutions.</p>
+            <a href="#signup" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>Why Choose MyBroker?</h2>
+        <div class="feature-list">
+            <div class="feature-item">
+                <h3>Low Brokerage Fees</h3>
+                <p>Enjoy some of the lowest brokerage fees in the industry, maximizing your investment returns.</p>
+            </div>
+            <div class="feature-item">
+                <h3>User-Friendly Platform</h3>
+                <p>Our intuitive platform makes trading and investing simple for both beginners and experts.</p>
+            </div>
+            <div class="feature-item">
+                <h3>24/7 Customer Support</h3>
+                <p>Get assistance whenever you need it with our dedicated customer support team.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section (Placeholder) -->
+    <section id="pricing" class="features" style="background-color: #fff;">
+        <h2>Pricing Plans</h2>
+        <p>Coming Soon...</p>
+    </section>
+
+    <!-- About Us Section (Placeholder) -->
+    <section id="about" class="features">
+        <h2>About Us</h2>
+        <p>Coming Soon...</p>
+    </section>
+
+    <!-- Contact Section (Placeholder) -->
+    <section id="contact" class="features" style="background-color: #fff;">
+        <h2>Contact Us</h2>
+        <p>Coming Soon...</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 MyBroker. All rights reserved.</p>
+        <p>
+            <a href="#terms">Terms of Service</a> |
+            <a href="#privacy">Privacy Policy</a>
+        </p>
+    </footer>
+
+</body>
+</html>

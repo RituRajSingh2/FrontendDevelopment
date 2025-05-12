@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <h2>CSS Selectors</h2>
+    <style>
+     /* this is element selector */
+        p{
+            color: blueviolet;
+            border: 3px solid yellow ;
+        }
+    /* this is Id selector */
+    /* <div id="mainbox"></div> */
+       #firstpara{
+         color: green;
+    }
+    .bgpink{
+        color: brown;
+        background-color: wheat;
+        border: 3px solid yellow ;
+    }
+    /* group selector */
+   div{
+    color: orange;
+    border: 3px solid yellow ;
+   } 
+   span,footer,header{
+    color:blue;
+    background-color: pink;
+    border: 3px solid green;
+   }
+   </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit, amet consectetur </p><p id="firstpara"> this is first paragraph </p> <p id="secondpara"class="redbg bgpink">this is second paragraph</p> 
+    <p>maxime modi ut eum pariatur neque, itaque omnis! Atque molestiae quibusdam aut sunt expedita reprehenderit quasi molestias. Saepe, incidunt!</p>
+    <footer>this &lt;is&gt; footer</footer>
+    <span> this is span </span>
+    <header>this is header</header>
+    <div>this is div</div>
+
+</body>
+</html>

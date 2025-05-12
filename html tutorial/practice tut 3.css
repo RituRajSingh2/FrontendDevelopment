@@ -1,0 +1,25 @@
+p{
+    color: red;
+    border: 3px solid blue;
+    background-color: rgb(227, 200, 150) ;
+  }
+  div{
+     color: red;
+     border: 3px solid blue; 
+     background-color: rgb(123, 106, 75);
+  }
+  strong{
+     color: red;
+     border: 3px solid greblue; 
+     background-color: rgb(204, 171, 110);
+  }
+  i{
+     color:red;
+     border: 3px solid greblue;  
+     background-color:rgb(232, 204, 151);
+  }
+  h1{
+     color: red;
+     border: 3px solid greblue;   
+     background-color: rgb(220, 185, 120);
+  }   

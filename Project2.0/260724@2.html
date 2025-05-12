@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Insurance Company</title>
+    <link rel="stylesheet" href="style260724@2.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Life Insurance Company</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#why-choose-us">Why Choose Us</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Secure Your Future with Us</h2>
+            <p>Your trusted partner in life insurance.</p>
+            <button onclick="showQuoteForm()">Get a Quote</button>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <div class="history">
+                <h3>Company Background</h3>
+                <p>Founded in 1990, we have been providing reliable life insurance solutions for over three decades.</p>
+            </div>
+            <div class="mission">
+                <h3>Mission and Values</h3>
+                <p>Our mission is to offer secure and comprehensive life insurance policies, helping you protect your
+                    loved ones. We value integrity, customer-centricity, and innovation.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="container">
+        <h2>Our Products</h2>
+        <div class="product">
+            <h3>Term Life Insurance</h3>
+            <p>Affordable coverage for a specific period, providing financial security during critical years.</p>
+        </div>
+        <div class="product">
+            <h3>Whole Life Insurance</h3>
+            <p>Lifetime coverage with a cash value component, offering lifelong protection and savings.</p>
+        </div>
+        <div class="product">
+            <h3>Universal Life Insurance</h3>
+            <p>Flexible coverage with investment options, allowing you to adjust your premiums and death benefits.</p>
+        </div>
+        <div class="additional-services">
+            <h3>Additional Services</h3>
+            <p>We also offer financial planning, retirement planning, and estate planning services.</p>
+        </div>
+    </section>
+
+    <section id="why-choose-us" class="container">
+        <h2>Why Choose Us?</h2>
+        <div class="testimonials">
+            <h3>Customer Testimonials</h3>
+            <p>"The best insurance company I have ever worked with. Their support and policies are unmatched!" - Jane
+                Doe</p>
+        </div>
+        <div class="awards">
+            <h3>Awards and Recognitions</h3>
+            <p>We have received numerous awards for excellence in customer service and product innovation.</p>
+        </div>
+        <div class="case-studies">
+            <h3>Case Studies</h3>
+            <p>See how our policies have helped families achieve financial security.</p>
+        </div>
+    </section>
+
+    <section id="resources" class="container">
+        <h2>Educational Resources</h2>
+        <div class="blog">
+            <h3>Blog/Articles</h3>
+            <p>Read our latest articles on life insurance, financial planning, and more.</p>
+        </div>
+        <div class="faqs">
+            <h3>FAQs</h3>
+            <p>Get answers to common questions about our policies and the claims process.</p>
+        </div>
+        <div class="glossary">
+            <h3>Glossary</h3>
+            <p>Understand common insurance terms with our comprehensive glossary.</p>
+        </div>
+    </section>
+
+    <section id="tools" class="container">
+        <h2>Tools and Calculators</h2>
+        <div class="calculator">
+            <h3>Insurance Calculators</h3>
+            <p>Use our interactive tools to calculate your insurance needs.</p>
+        </div>
+        <div class="premium-estimator">
+            <h3>Premium Estimator</h3>
+            <p>Estimate your premium costs with our easy-to-use estimator tool.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact Us</h2>
+        <form id="quote-form" class="hidden">
+            <h3>Get a Free Quote</h3>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="contact-info">
+            <h3>Customer Support</h3>
+            <p>Phone: 1-800-123-4567</p>
+            <p>Email: support@lifeinsurance.com</p>
+            <p>Live Chat: Available 24/7</p>
+        </div>
+        <div class="office-locations">
+            <h3>Our Offices</h3>
+            <p>New York, NY - 123 Main Street</p>
+            <p>Los Angeles, CA - 456 Elm Street</p>
+            <p>Chicago, IL - 789 Oak Street</p>
+        </div>
+    </section>
+
+    <section id="cta" class="container">
+        <h2>Get Started</h2>
+        <button onclick="showQuoteForm()">Get a Quote</button>
+        <button onclick="scheduleConsultation()">Schedule a Consultation</button>
+        <button onclick="subscribeNewsletter()">Subscribe to Newsletter</button>
+    </section>
+
+    <section id="social-proof" class="container">
+        <h2>Social Proof</h2>
+        <div class="social-links">
+            <h3>Follow Us</h3>
+            <a href="https://facebook.com">Facebook</a>
+            <a href="https://twitter.com">Twitter</a>
+            <a href="https://linkedin.com">LinkedIn</a>
+        </div>
+        <div class="user-reviews">
+            <h3>User Reviews</h3>
+            <p>"Excellent service and support!" - John Smith</p>
+            <p>"Highly recommend their policies!" - Emily Johnson</p>
+        </div>
+    </section>
+
+    <section id="community" class="container">
+        <h2>Community Involvement</h2>
+        <div class="csr">
+            <h3>Corporate Social Responsibility</h3>
+            <p>We are committed to giving back to the community through various charitable activities and initiatives.
+            </p>
+        </div>
+        <div class="events">
+            <h3>Upcoming Events</h3>
+            <p>Join us for our next webinar on financial planning.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Life Insurance Company. All rights reserved.</p>
+            <a href="#privacy-policy">Privacy Policy</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

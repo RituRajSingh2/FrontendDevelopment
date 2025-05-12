@@ -1,0 +1,20 @@
+p{
+    /* color by name */
+    color: black;
+    border: 2px solid red;
+    background-color: blue;
+     
+ } 
+#firstparam{    
+
+    /* color by rgb value */
+    color:rgb(10, rgb(110, 171, 110), rgb(68, 68, 173));
+    border: 2px solid red;
+    background-color: brown;
+}
+.barbershop{
+    /* color by hex value */
+    color: #ff5656;
+    border: 2px solid red;
+    background-color: peru
+}

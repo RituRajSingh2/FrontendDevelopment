@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        canvas {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="solar-system" width="800" height="800"></canvas>
+    <script>
+        const canvas = document.getElementById('solar-system');
+        const ctx = canvas.getContext('2d');
+        
+        const centerX = canvas.width / 2;
+        const centerY = canvas.height / 2;
+        const sunRadius = 50;
+        
+        const planets = [
+            { name: 'Mercury', radius: 10, distance: 100, angle: 380, speed: 0.009, color: 'gray' },
+            { name: 'Venus', radius: 15, distance: 130, angle: 20, speed: 0.008, color: 'orange' },
+            { name: 'Earth', radius: 20, distance: 150, angle: 50, speed: 0.0071, color: 'blue' },
+            { name: 'Mars', radius: 18, distance: 190, angle: 90, speed: 0.0050,color: 'red' },
+            { name: 'saturn', radius: 50, distance: 245, angle: 220, speed: 0.0038, color: 'white' },
+            { name: 'jupiter', radius: 30, distance: 290, angle: 180, speed: 0.0028, color: 'green' }, 
+            { name: 'neptune', radius: 24, distance: 350, angle: 250, speed: 0.0019, color: 'red' },
+            { name: 'venus', radius: 16, distance: 390, angle: 300, speed: 0.0011, color: 'red' },
+        ];
+        
+        function drawPlanet(x, y, radius, color, name) {
+            // Draw planet
+            ctx.beginPath();
+            ctx.arc(x, y, radius, 0, Math.PI * 2);
+            ctx.fillStyle = color;
+            ctx.fill();
+            
+            // Draw planet name
+            ctx.fillStyle = 'white';
+            ctx.font = '12px Arial';
+            ctx.fillText(name, x - radius / 2, y + radius + 15);
+        }
+        
+        function draw() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // Draw the Sun
+            ctx.beginPath();
+            ctx.arc(centerX, centerY, sunRadius, 0, Math.PI * 2);
+            ctx.fillStyle = 'yellow';
+            ctx.fill();
+            
+            // Update and draw planets
+            planets.forEach(planet => {
+                planet.angle += planet.speed;
+                const x = centerX + planet.distance * Math.cos(planet.angle);
+                const y = centerY + planet.distance * Math.sin(planet.angle);
+                drawPlanet(x, y, planet.radius, planet.color, planet.name);
+            });
+            
+            requestAnimationFrame(draw);
+        }
+        
+        draw();
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Insurance Company</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Life Insurance Company</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#why-choose-us">Why Choose Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Secure Your Future with Us</h2>
+            <p>Your trusted partner in life insurance</p>
+            <button onclick="showQuoteForm()">Get a Quote</button>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <h2>About Us</h2>
+        <p>We are committed to providing the best life insurance solutions tailored to your needs.</p>
+    </section>
+
+    <section id="products" class="container">
+        <h2>Our Products</h2>
+        <div class="product">
+            <h3>Term Life Insurance</h3>
+            <p>Affordable coverage for a specific period.</p>
+        </div>
+        <div class="product">
+            <h3>Whole Life Insurance</h3>
+            <p>Lifetime coverage with cash value component.</p>
+        </div>
+        <div class="product">
+            <h3>Universal Life Insurance</h3>
+            <p>Flexible coverage with investment options.</p>
+        </div>
+    </section>
+
+    <section id="why-choose-us" class="container">
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li>Customer Testimonials</li>
+            <li>Awards and Recognitions</li>
+            <li>Comprehensive Coverage</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact Us</h2>
+        <form id="quote-form" class="hidden">
+            <h3>Get a Free Quote</h3>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Life Insurance Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

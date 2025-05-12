@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <title> list,tables,Forms,Input tags,inline and block element</title>
+</head>
+<body>
+    <ul type="circle"> 
+        <li>this is content of first paragraph</li>
+        <li>this is content of second paragraph</li>
+        <li>this is content of third paragraph
+            <ul type="square">
+                <li>this is not first topic</li>
+                <li> this is not second topic</li>
+                <li>this is not third topic</li>
+                <li>this is not fourth topic</li>
+            </ul>
+        </li>
+        <li>this is content of fourth paragraph</li>
+        <li>this is content of fifth paragraph</li>
+    </ul>
+    
+    <ol type="1"> 
+        <li>this is content of first paragraph</li>
+        <li>this is content of second paragraph</li>
+        <li>this is content of third paragraph
+            <ol type="a">
+                <li>this is not first topic</li>
+                <li>this is not second topic</li>
+                <li>this is not third topic</li>
+                <li> this is not fourth topic</li>
+            </ol>
+        </li>
+        <li>this is content of fourth paragraph</li>
+        <li>this is content of fifth paragraph</li>
+    </ol>
+    <!-- here html tables starts -->
+    <table>
+        <thead>
+            <tr>
+                <th>Employee name</th>
+                <th>Employee id</th>
+                <th>Employee role</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ritu raj1</td>
+                <td>6445</td>
+                <td>software engineer</td>
+            </tr>
+            <tr>
+                <td>ritu raj2.o</td>
+                <td>6445ewg</td>
+                <td>full stack web developer</td>
+            </tr>
+            <tr>
+                <td>ritu raj3.0</td>
+                <td>6445getsg</td>
+                <td>businessman</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <!-- here tut 7 content is done -->
+    <form action="backend.python">
+        <label for="name">Name</label>
+        <div>
+            <input type="name" name="my name" id="name">
+        </div>
+        <BR>
+        <label for="role">Role</label>
+        <div>
+        <input type="text" name="my role" id="role">
+        </div>
+        <BR>
+        <label for="email">Email</label>
+        <div>
+        <input type="email" name="my email" id="email">
+        </div>
+        <BR>
+        <label for="bonus">Bonus</label>
+        <div>
+        <input type="number" name="mybonus" id="bonus">
+        </div>
+        <BR>
+        <label for="car">Car</label>
+        <div>
+            <select name="car" id="car">
+               <option value="farari">Farari</option>
+               <option value="landrover">Landrover</option>
+            </select>
+        </div>
+        <BR>
+        <label for="eligibility">Are you Eligible?</label>
+        <div>
+        <input type="checkbox" name="my eligibility" id="eligibility">
+        </div>
+        <BR>
+        <label for="date">Date</label>
+        <div>
+        <input type="date" name="my date" id="date">
+        </div>
+        <BR>
+        <label for="gender">Gender</label>
+        <div>
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <BR>
+        <label for="textarea">Write a brief introduction of youself</label>
+        <div>
+        <textarea name="my text" id="textarea" cols="80" rows="20"></textarea>
+        </div>
+        <BR>
+            <div>
+                <input type="reset" value="reset">
+                <input type="submit" value="final submit">
+            </div>
+    </form>
+    <!-- here you learn what are inline and block element -->
+    <p style="border: 2px solid blue">this is a paragraph</p>
+    <p style="border: 2px solid blue">this is a paragraph</p>
+    <p style="border: 2px solid red">this is a paragraph</p>
+    <p style="border: 2px solid green">this is a paragraph</p>
+    <p style="border: 2px solid black">this is a paragraph</p>
+    <p style="border: 2px solid gray">this is a paragraph</p>
+    <p style="border: 2px solid pink">this is a paragraph</p>
+    <p style="border: 2px solid violet">this is a paragraph</p>
+    <p style="border: 2px solid brown">this is a paragraph</p>
+    <!-- img is neither inline nor block ,it is replaced ,it display property of inline by default  -->
+</body>
+</html>

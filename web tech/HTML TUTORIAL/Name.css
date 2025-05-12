@@ -1,0 +1,8 @@
+ .box
+ p{
+    text-align: center;
+    background-color: azure;
+    /* padding is area outside content */
+    padding: 5px;
+    font: 2px solid red;
+}
